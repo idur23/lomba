@@ -14,6 +14,7 @@
 		      </div>
 		      <div class="container">
 		        <table id="table" class="table" border="1" cellspacing="0" width="100%">
+			<thead>
 		                <tr>
 		                	<th width="5%">No</th>
 		                	<th width="25%">Foto</th>
@@ -23,6 +24,7 @@
 		                	<th width="8%">Jenis Kelamin</th>
 		                	<th width="20%">Alamat</th>
 		                </tr>
+	                </thead>
 		            	<?php $no=1; ?>
 		            	<?php foreach ($anak as $key => $value) {?>
 		            	<tr>
