@@ -10,10 +10,12 @@
 			<?php $this->load->view('Admin/side'); ?>
 			<main class="col-md-9 ms-sm-auto col-lg-8 px-md-1">
 		      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-		        <h1 class="h2">Verifikasi & Validasi</h1>
+		        <h1 class="h2">Daftar Anak</h1>
 		      </div>
+		      <br>
 		      <div class="container">
 		        <table id="table" class="table" border="1" cellspacing="0" width="100%">
+		        	<thead>
 		               	<tr>
 		                	<th width="5%">No</th>
 		                	<th width="25%">Foto</th>
@@ -24,6 +26,7 @@
 		                	<th width="20%">Alamat</th>
 		                	<th width="20%">Aksi</th>
 		                </tr>
+	                </thead>
 		            	<?php $no=1; ?>
 		            	<?php foreach ($anak as $key => $value) {?>
 		            	<tr>
@@ -36,7 +39,7 @@
 		            		<td><?php echo $value['alamat'] ?></td>
 		            		<td>
 								<a href="<?php echo base_url('Daftar_Anak_Admin/edit/'.$value['id']); ?>"><button class="btn btn-info">Edit</button></a>
-								<a href="<?php echo base_url('Daftar_Anak_Admin/hapus/'.$value['id']); ?>"><button class="btn btn-danger">Hapus</button></a>
+								<a href="<?php echo base_url('Daftar_Anak_Admin/hapus_upload/'.$value['id']); ?>"><button class="btn btn-danger">Hapus</button></a>
 							</td>
 		            	</tr>
 		            <?php } ?>
