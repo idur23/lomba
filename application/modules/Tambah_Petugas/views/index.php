@@ -19,6 +19,7 @@
 					</tr>
 				</table>
 		        <table id="table" class="table" border="1" cellspacing="0" width="100%">
+		        	<thead>
 		                <tr>
 		                	<th>No</th>
 		                	<th>NIK</th>
@@ -26,6 +27,7 @@
 		                	<th>Email</th>
 		                	<th>Aksi</th>
 		                </tr>
+	                </thead>
 		            	<?php $no=1; ?>
 		            	<?php foreach ($petugas as $key => $value) {?>
 		            	<tr>
