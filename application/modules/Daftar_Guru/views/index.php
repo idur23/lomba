@@ -10,7 +10,7 @@
 			<?php $this->load->view('Admin/side'); ?>
 			<main class="col-md-9 ms-sm-auto col-lg-8 px-md-1">
 		      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-		        <h1 class="h2">Tambah Guru</h1>
+		        <h1 class="h2">Daftar Guru</h1>
 		      </div>
 		      <div class="container">
 		        <table class="table" width="100%">
@@ -19,6 +19,7 @@
 					</tr>
 				</table>
 		        <table id="table" class="table" border="1" cellspacing="0" width="100%">
+		        	<thead>
 		                <tr>
 		                	<th>No</th>
 		                	<th>Foto</th>
@@ -28,6 +29,7 @@
 		                	<th>Alamat</th>
 		                	<th>Aksi</th>
 		                </tr>
+		               </thead>
 		            	<?php $no=1; ?>
 		            	<?php foreach ($guru as $key => $value) {?>
 		            	<tr>
@@ -39,7 +41,7 @@
 							<td><?php echo $value['alamat'] ?></td>
 							<td>
 								<a href="<?php echo base_url('Daftar_Guru/edit/'.$value['id']); ?>"><button class="btn btn-info">Edit</button></a>
-								<a href="<?php echo base_url('Daftar_Guru/hapus/'.$value['id']); ?>"><button class="btn btn-danger">Hapus</button></a>
+								<a href="<?php echo base_url('Daftar_Guru/hapus_upload/'.$value['id']); ?>"><button class="btn btn-danger">Hapus</button></a>
 							</td>
 		            	</tr>
 		            <?php } ?>
