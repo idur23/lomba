@@ -3,3 +3,4 @@ Project dikerjakan oleh :
 2.	Josheva Christian Ardyanto	(21083000061/S1 Sistem Informasi)
 
 Nama Project : Lomba
+Nama Database : pendaftaran (berada pada folder sql)
