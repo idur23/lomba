@@ -32,7 +32,7 @@
       </nav>
     </header>
 
-    <div class="site-blocks-cover" style="background-color:#6495ED"; background-size: auto data-aos="fade">
+    <div class="site-blocks-cover" style="background-color:#FFC0CB"; background-size: auto data-aos="fade">
       <div class="container">
         <div class="row align-items-start align-items-md-center">
           <div class="">
@@ -55,16 +55,30 @@
             <div class="icon mr-4 align-self-start">
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Respon</h2>
-              <p>Respon Cepat Terhadap Masalah Yang ada.</p>
+              <h2 class="text-uppercase">Visi</h2>
+              <p>Unggul dalam Prestasi, Iman dan Takwa, Terampil, Mandiri, dan Berbudaya Pancasila</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
             <div class="icon mr-4 align-self-start">
             </div>
             <div class="text">
-              <h2 class="text-uppercase">Tanggapan</h2>
-              <p>Tanggapan Mudah diterima oleh Masyarakat.</p>
+              <h2 class="text-uppercase">Misi</h2>
+              <p>1. Meningkatkan keimanan dan ketaqwaan terhadap Tuhan Yang Maha Esa, serta berahlak mulia (Cerdas Spiritual/Olah Hati)</p>
+<p>2.  Meningkatkan kesadaran dan wawasan dalam bersosialisasi (Cerdas Sosial/Olah Rasa)</p>
+<p>3.  Menanamkan kebiasaan berpikir dan berperilaku dengan ceria (Cerdas Intelektual/Olah Pikir)</p>
+<p>4.  Meningkatkan kesadaran akan diri dan situasi yang dihadapi (Cerdas Emosional)</p>
+<p>5.  Membangun karakter warga sekolah yang peduli lingkungan untuk mewujudkan upaya pelestarian lingkungan (Cerdas Kinestetis)</p>
+<p>6.  Menyelenggarakan pembelajaran yang aktif, inovatif, kreatif, efektif, menyenangkan, gembira, dan berbobot dengan tetap menjalankan prokes di masa pandemi.
+</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+            <div class="icon mr-4 align-self-start">
+            </div>
+            <div class="text">
+              <h2 class="text-uppercase">Alamat</h2>
+              <p>Gg. Melati Jl. Peltu Sujono No.04, Ciptomulyo, Kec. Sukun, Kota Malang, Jawa Timur 65148</p>
             </div>
           </div>
         </div>
