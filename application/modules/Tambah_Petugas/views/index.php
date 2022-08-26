@@ -37,7 +37,6 @@
 							<td><?php echo $value['email'] ?></td>
 							<td>
 								<a href="<?php echo base_url('tambah_Petugas/edit/'.$value['id']); ?>"><button class="btn btn-info">Edit</button></a>
-								<a href="<?php echo base_url('tambah_Petugas/hapus/'.$value['id']); ?>"><button class="btn btn-danger">Hapus</button></a>
 							</td>
 		            	</tr>
 		            <?php } ?>
