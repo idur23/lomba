@@ -39,20 +39,12 @@ class Daftar_Anak_Admin extends MX_Controller {
 	{
 		$this->load->view('dashboard_tambah');
 	}
-	function tambah_aksi()
+	function cari()
 	{
-		$id_pengaduan = $this->input->post('id_pengaduan');
-		$id_petugas = $this->input->post('id_petugas');
-		$tanggapan = $this->input->post('tanggapan');
-
-		$data = array(
-			'id_pengaduan' => $id_pengaduan,
-			'id_petugas' => $id_petugas,
-			'tanggapan' => $tanggapan,
-		);
-		$this->tanggapan->input_data($data,'penanggapan');
-		$this->session->set_flashdata('msg','Berhasil Tambah Data');
-		redirect('Tanggapan_Admin');
+		$keyword = $this->input->post('keyword');
+		$data['anak'] = $this->anak->search($keyword);
+		print(var_dump($data));
+		// $this->load->view('index',$data);
 	}
 	function hapus($id)
 	{
@@ -66,27 +58,6 @@ class Daftar_Anak_Admin extends MX_Controller {
 		$where = array('id' => $id);
 		$data['anak'] = $this->anak->edit_data($where,'anak')->result();
 		$this->load->view('edit',$data);
-	}
-	function update()
-	{
-		$id 		= $this->input->post('id');
-		$nama 		= $this->input->post('nama');
-		$penerbit 	= $this->input->post('penerbit');
-		$penulis 	= $this->input->post('penulis');
-
-		$data = array(
-			'nama' 		=> $nama,
-			'penerbit' 	=> $penerbit,
-			'penulis' 	=> $penulis
-		);
-
-		$where = array(
-			'id' => $id
-		);
-
-		$this->pengaduan->update_data($where,$data,'rincian_buku');
-		redirect('http://localhost:8080/hmvc2/');
-
 	}
 	function index_upload()
 	{
@@ -125,17 +96,17 @@ class Daftar_Anak_Admin extends MX_Controller {
 	}
 	function hapus_upload($id)
 	{
-		$_id = $this->db->get_where('pengaduan',['id'=>$id])->row();
-		$query = $this->db->delete('pengaduan',['id'=>$id]);
+		$_id = $this->db->get_where('anak',['id'=>$id])->row();
+		$query = $this->db->delete('anak',['id'=>$id]);
 		if($query){
 			unlink("upload/".$_id->nama_berkas);
 		}
-		redirect('Verifikasi_Admin');
+		redirect('Daftar_Anak_Admin');
 	}
 	function tampil_edit($id)
 	{
 		$where = array('id' => $id);
-		$data['pengaduan'] = $this->pengaduan->edit_data($where,'pengaduan')->result();
+		$data['anak'] = $this->anak->edit_data($where,'anak')->result();
 		$this->load->view('edit',$data);
 	}
 	function upload_edit()
@@ -228,5 +199,10 @@ class Daftar_Anak_Admin extends MX_Controller {
 			redirect('dashboard');
 		}
 		$this->load->view('dashboard');
+	}
+	function print()
+	{
+		$data['anak'] = $this->anak->ambil_data()->result_array();
+		$this->load->view('print',$data);
 	}
 }
