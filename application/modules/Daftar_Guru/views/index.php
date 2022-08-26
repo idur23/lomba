@@ -15,7 +15,10 @@
 		      <div class="container">
 		        <table class="table" width="100%">
 					<tr>
-						<td><a href="<?php echo base_url('Daftar_Guru/tambah'); ?>"><button class="btn btn-info">Tambah Data</button></td>
+						<td>
+							<a href="<?php echo base_url('Daftar_Guru/tambah'); ?>"><button class="btn btn-info">Tambah Data</button>
+							<a href="<?php echo base_url('Daftar_Guru/print'); ?>"><button class="btn btn-danger">Print Data</button>
+						</td>
 					</tr>
 				</table>
 		        <table id="table" class="table" border="1" cellspacing="0" width="100%">
